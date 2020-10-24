@@ -1,0 +1,51 @@
+:root {
+    --primary-pink-color: #bf1650;
+    --secondary-pink-color: #ec5990;
+}
+
+/* Título de Home */
+
+.title {
+    font: normal 80px Montserrat, sans-serif;
+    font-style: italic;
+}
+
+.title p {
+    float: left;
+    margin-right: 0.3em;
+}
+
+.title b {
+    float: left;
+    overflow: hidden;
+    height: 92px;
+}
+
+.title .innerTitle {
+    position: relative;
+    padding: 0 5px;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    color: var(--secondary-pink-color);
+    /*animation*/
+    animation: move 7s;
+    /*animation-iteration-count*/
+    animation-iteration-count: infinite;
+    /*animation-delay*/
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+    40% {
+        top: -92px;
+    }
+    80% {
+        top: -184px;
+    }
+}
+
+/* Fin Título de Home */
